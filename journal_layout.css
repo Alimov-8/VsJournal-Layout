@@ -45,12 +45,37 @@ body {
 	float: right;
 }
 
-.article--cookiemonster{
+.article--cookiemonster {
 	padding-top: 50px;
-	float: right;	
+	float: right;
 }
 
 .article::after {
 	clear: both;
 	display: table;
+}
+
+
+/* --- Block --- */
+.box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+.block{
+	flex-basis: 80%;
+	flex-grow: 4;
+	order: 2;
+}
+
+.sidebar{
+	flex-basis: 20%;
+	flex-grow: 1;
+	margin: 10px 10px 10px 0;
+	padding: 5px;
+	background-color: #A8F0F0;
+	border: 4px solid #009097;;
+	height: 100%;
 }
